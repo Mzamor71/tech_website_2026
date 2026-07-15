@@ -25,7 +25,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
@@ -60,11 +59,18 @@
             <label for="phone">Phone</label>
             <input type="tel" id="phone" placeholder="(956) 555-1234">
 
-            <label for="device">Device Type</label>
-            <input type="text" id="device" placeholder="Laptop, Desktop, Phone, etc.">
+            <label for="device">Choose a Device</label>
+            <select name="devices" id=""devices>
+                <option value="Select A Device" selected>Select A Device</option>
+                <option value="Laptop"> Laptop</option>
+                <option value="Desktop"> Desktop</option>
+                <option value="Mobile Phone"> Mobile Phone</option>
+                <option value="Tablet"> Tablet</option>
+                <option value="Printer"> Printer</option>
+            </select>
 
             <label for="message">Describe the Problem</label>
-            <textarea id="message" rows="6" placeholder="Tell us about the issue..." required></textarea>
+            <textarea id="message" rows="6" placeholder="Tell us about the issue... Please describe the type of device" required></textarea>
 
             <button type="submit">Send Request</button>
 
@@ -90,7 +96,7 @@
 
             <div class="card">
                 <h3>📧 Email</h3>
-                <p>support@zamoratechsolutions.com</p>
+                <p>zamoratechsolutions00@gmail.com</p>
             </div>
 
         </div>
