@@ -1,73 +1,112 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-<header>
-    <nav class="navbar">
-
-        <a href="index.html" class="logo">
-            <h1>Tech Repair Solutions</h1>
-        </a>
-
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-    </nav>
-</header>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Zamora Tech Solutions</title>
 
-<title>Contact</title>
-
-<link rel="stylesheet" href="assets/css/styles.css">
-
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
 
-<header>
+    <!-- Navigation -->
 
-<h1>Contact Us</h1>
+    <header>
+        <nav class="navbar">
 
-</header>
+            <a href="index.html" class="logo">
+                <h1>Zamora Tech Solutions</h1>
+            </a>
 
-<section>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-<form>
+        </nav>
+    </header>
 
-<label>Name</label>
+    <!-- Contact Hero -->
 
-<input type="text">
+    <section class="hero">
 
-<label>Email</label>
+        <h2>Contact Us</h2>
 
-<input type="email">
+        <p>
+            Have questions or need a repair? Fill out the form below,
+            and we'll get back to you as soon as possible.
+        </p>
 
-<label>Phone</label>
+    </section>
 
-<input type="tel">
+    <!-- Contact Form -->
 
-<label>Message</label>
+    <section class="section">
 
-<textarea></textarea>
+        <form>
 
-<button type="submit">Send</button>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
 
-</form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@email.com" required>
 
-</section>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="(956) 555-1234">
 
-<footer>
+            <label for="device">Device Type</label>
+            <input type="text" id="device" placeholder="Laptop, Desktop, Phone, etc.">
 
-<p>Phone: (956) 555-1234</p>
+            <label for="message">Describe the Problem</label>
+            <textarea id="message" rows="6" placeholder="Tell us about the issue..." required></textarea>
 
-<p>Email: support@techrepair.com</p>
+            <button type="submit">Send Request</button>
 
-</footer>
+        </form>
+
+    </section>
+
+    <!-- Business Information -->
+
+    <section class="section">
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📍 Location</h3>
+                <p>Donna, Texas</p>
+            </div>
+
+            <div class="card">
+                <h3>📞 Phone</h3>
+                <p>(956) 555-1234</p>
+            </div>
+
+            <div class="card">
+                <h3>📧 Email</h3>
+                <p>support@zamoratechsolutions.com</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Zamora Tech Solutions</p>
+        <p>Computer Repair • Networking • IT Support</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
-
 </html>

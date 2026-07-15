@@ -1,32 +1,105 @@
-@media(max-width:768px){
+/* ===========================
+   Mobile Devices
+=========================== */
 
-nav{
-    flex-direction:column;
+@media screen and (max-width:768px){
+
+    /* Navigation */
+
+    .navbar{
+        flex-wrap: wrap;
+        padding:15px 20px;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:30px;
+        color:white;
+        background:none;
+        border:none;
+        cursor:pointer;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+        margin-top:15px;
+        gap:20px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+
+    /* Hero */
+
+    .hero{
+        padding:80px 20px;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    /* Cards */
+
+    .cards{
+        grid-template-columns:1fr;
+        padding:25px;
+    }
+
+    /* Contact Form */
+
+    form{
+        width:95%;
+    }
+
+    /* Tables */
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+
+    /* Footer */
+
+    .footer-container{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        gap:25px;
+    }
+
 }
 
-nav ul{
-    flex-direction:column;
-    text-align:center;
-}
+/* ===========================
+   Desktop
+=========================== */
 
-nav ul li{
-    margin:10px 0;
-}
+@media screen and (min-width:769px){
 
-.hero{
-    padding:60px 20px;
-}
+    .menu-toggle{
+        display:none;
+    }
 
-.cards{
-    grid-template-columns:1fr;
-}
-
-table{
-    width:100%;
-}
-
-form{
-    width:90%;
-}
+    .nav-links{
+        display:flex !important;
+    }
 
 }

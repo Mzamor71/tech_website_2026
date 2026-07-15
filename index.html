@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zamora Tech Solutions</title>
+    <title>Zamora Tech Solutions | Computer Repair & IT Support</title>
 
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
+    <meta name="description" content="Professional computer repair, networking, custom PCs, virus removal, and business IT support in the Rio Grande Valley.">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
 
-    <nav>
+    <nav class="navbar">
 
-        <h1 class="logo">Zamora Tech Solutions</h1>
+        <a href="index.html" class="logo">
+            <h1>Zamora Tech Solutions</h1>
+        </a>
 
-        <ul>
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="nav-links">
 
             <li><a href="index.html">Home</a></li>
 
@@ -35,48 +46,233 @@
 
 </header>
 
+<!-- HERO -->
+
 <section class="hero">
 
-    <h2>Your Trusted Computer Repair Experts</h2>
+    <div class="hero-content">
 
-    <p>Professional repairs, upgrades, virus removal, networking, and IT support.</p>
+        <h2>Technology Solutions You Can Trust</h2>
 
-    <a href="contact.html" class="button">Schedule Service</a>
+        <p>
+            Fast computer repairs, virus removal, networking,
+            custom PC builds, upgrades, and IT support for
+            homes and businesses.
+        </p>
 
-</section>
+        <div class="hero-buttons">
 
-<section>
+            <a href="contact.html" class="button">
+                Request Service
+            </a>
 
-    <h2>Why Choose Us?</h2>
+            <a href="services.html" class="button secondary">
+                Our Services
+            </a>
 
-    <div class="cards">
-
-        <div class="card">
-            <h3>Fast Repairs</h3>
-            <p>Quick turnaround times.</p>
-        </div>
-
-        <div class="card">
-            <h3>Affordable Pricing</h3>
-            <p>No hidden fees.</p>
-        </div>
-
-        <div class="card">
-            <h3>Experienced Technicians</h3>
-            <p>Years of technical experience.</p>
         </div>
 
     </div>
 
 </section>
 
+<!-- SERVICES -->
+
+<section class="section">
+
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>💻 Computer Repair</h3>
+            <p>
+                Desktop and laptop diagnostics,
+                upgrades, hardware replacement,
+                and software troubleshooting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🛡 Virus Removal</h3>
+            <p>
+                Malware cleanup, ransomware
+                protection, antivirus installation,
+                and system optimization.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Networking</h3>
+            <p>
+                Wi-Fi setup, router configuration,
+                printers, NAS devices, and business
+                networking.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🖥 Custom PCs</h3>
+            <p>
+                Gaming PCs, workstation builds,
+                upgrades, and performance tuning.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="section dark">
+
+    <h2>Why Choose Zamora Tech Solutions?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>⚡ Fast Turnaround</h3>
+
+            <p>
+                We understand your technology is
+                important and work quickly to get
+                you back up and running.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>💲 Honest Pricing</h3>
+
+            <p>
+                Transparent pricing with no
+                hidden fees or unnecessary
+                repairs.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>⭐ Customer Focused</h3>
+
+            <p>
+                Friendly support backed by years
+                of hands-on experience.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="section">
+
+    <h2>Customer Testimonials</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <p>
+                ⭐⭐⭐⭐⭐
+            </p>
+
+            <p>
+                "Fast, professional, and affordable.
+                My laptop was repaired the same day."
+            </p>
+
+            <strong>- Future Customer</strong>
+        </div>
+
+        <div class="card">
+
+            <p>
+                ⭐⭐⭐⭐⭐
+            </p>
+
+            <p>
+                "Excellent customer service and
+                knowledgeable technician."
+            </p>
+
+            <strong>- Future Customer</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+    <h2>Ready to Fix Your Computer?</h2>
+
+    <p>
+        Contact us today for reliable IT support
+        and computer repair services.
+    </p>
+
+    <a href="contact.html" class="button">
+        Contact Us
+    </a>
+
+</section>
+
 <footer>
 
-    <p>© 2026 Tech Repair Solutions</p>
+    <div class="footer-container">
+
+        <div>
+
+            <h3>Zamora Tech Solutions</h3>
+
+            <p>
+                Computer Repair • Networking
+                • IT Support
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Business Hours</h3>
+
+            <p>Monday - Friday</p>
+
+            <p>9:00 AM - 6:00 PM</p>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>Phone: (956) XXX-XXXX</p>
+
+            <p>Email: support@zamoratechsolutions.com</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p>
+        © 2026 Zamora Tech Solutions. All Rights Reserved.
+    </p>
 
 </footer>
 
-<script src="assets/js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
