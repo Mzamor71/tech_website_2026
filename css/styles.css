@@ -183,6 +183,29 @@ footer{
     padding:25px;
     margin-top:40px;
 }
-body{
-    background:red;
+
+.form-status {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-status:empty {
+    display: none;
+}
+
+.form-status.success {
+    display: block;
+    background: #e8f5e9;
+    color: #1b5e20;
+    border: 1px solid #81c784;
+}
+
+.form-status.error {
+    display: block;
+    background: #ffebee;
+    color: #b71c1c;
+    border: 1px solid #ef9a9a;
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact | Zamora Tech Solutions</title>
 
     <link rel="stylesheet" href="css/styles.css">
@@ -12,75 +13,129 @@
 
 <body>
 
-    <!-- Navigation -->
+<header>
+    <nav class="navbar">
 
-    <header>
-        <nav class="navbar">
+        <a href="index.html" class="logo">
+            <h1>Zamora Tech Solutions</h1>
+        </a>
 
-            <a href="index.html" class="logo">
-                <h1>Zamora Tech Solutions</h1>
-            </a>
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
 
-        </nav>
-    </header>
+    </nav>
+</header>
 
-    <!-- Contact Hero -->
+<main>
 
     <section class="hero">
-
         <h2>Contact Us</h2>
 
         <p>
-            Have questions or need a repair? Fill out the form below,
-            and we'll get back to you as soon as possible.
+            Have questions or need a repair?
+            Fill out the form below and we will contact you shortly.
         </p>
-
     </section>
-
-    <!-- Contact Form -->
 
     <section class="section">
 
-        <form
-        action="https://formspree.io/f/xdaqkjdv"
-        method="POST">
+        <form id="contact-form">
 
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                autocomplete="name"
+                required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                autocomplete="email"
+                required>
 
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="(956) 555-1234" required>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(956) 555-1234"
+                autocomplete="tel"
+                required>
 
             <label for="device">Choose a Device</label>
-            <select name="devices" id=""devices>
-                <option value="Select A Device" selected>Select A Device</option>
-                <option value="Laptop"> Laptop</option>
-                <option value="Desktop"> Desktop</option>
-                <option value="Mobile Phone"> Mobile Phone</option>
-                <option value="Tablet"> Tablet</option>
-                <option value="Printer"> Printer</option>
+
+            <select id="device" name="device" required>
+                <option value="" selected disabled>Select a Device</option>
+                <option value="Desktop">Desktop Computer</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Gaming PC">Gaming PC</option>
+                <option value="MacBook">MacBook</option>
+                <option value="iMac">iMac</option>
+                <option value="Tablet">Tablet</option>
+                <option value="Smartphone">Smartphone</option>
+                <option value="Printer">Printer</option>
+                <option value="Router">Router / Networking Equipment</option>
+                <option value="Other">Other</option>
             </select>
 
-            <label for="message">Describe the Problem</label>
-            <textarea id="message" rows="6" name="notes" placeholder="Tell us about the issue... Please describe the type of device" required></textarea>
+            <div id="other-device-container" style="display:none;">
 
-            <button type="submit">Send Request</button>
+                <label for="other-device">Please Specify</label>
+
+                <input
+                    type="text"
+                    id="other-device"
+                    name="otherDevice"
+                    placeholder="Enter your device">
+
+            </div>
+
+            <label for="message">Describe the Problem</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Describe the issue with your device..."
+                required></textarea>
+
+            <button type="submit">
+                Submit Service Request
+            </button>
+
+            <p
+                id="form-status"
+                class="form-status"
+                role="status"
+                aria-live="polite">
+            </p>
 
         </form>
 
     </section>
-
-    <!-- Business Information -->
 
     <section class="section">
 
@@ -105,15 +160,14 @@
 
     </section>
 
-    <!-- Footer -->
+</main>
 
-    <footer>
+<footer>
+    <p>© 2026 Zamora Tech Solutions. All Rights Reserved.</p>
+</footer>
 
-        <p>© 2026 Zamora Tech Solutions. All Rights Reserved.</p>
-
-    </footer>
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
+
 </html>
